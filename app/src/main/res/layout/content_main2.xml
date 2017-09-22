@@ -11,7 +11,7 @@
      android:text="HELLO EVERYONE"
      android:background="#FF6633"
     android:id="@+id/text"
-    android:textColor="#d20cd6"
+    android:textColor="#a41111"
     android:textSize="30sp"
     android:textStyle="italic|bold"/>
 
