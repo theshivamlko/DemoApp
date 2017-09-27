@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
      android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/spr1"
         android:entries="@array/Months"/>
+
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -38,6 +38,27 @@
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:progress="40"
+        android:max="100"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="3" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="2"
+        android:max="5"/>
+
+
 
 </LinearLayout>

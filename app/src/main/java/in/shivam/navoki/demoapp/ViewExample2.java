@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ProgressBar;
+import android.widget.RatingBar;
+import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -17,6 +20,8 @@ public class ViewExample2 extends Activity {
     Context context;
     private ProgressBar progressBar;
     private ProgressBar progressBar2;
+    private SeekBar seekBar;
+    private SeekBar seekBar2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +30,12 @@ public class ViewExample2 extends Activity {
 
         Spinner spinner=(Spinner)findViewById(R.id.spr2);
         Spinner spinner2=(Spinner)findViewById(R.id.spr3);
+        RatingBar ratingBar=(RatingBar) findViewById(R.id.ratingBar);
         context=this;
+
+        Log.e("MSG",ratingBar.getNumStars()+"");
+        seekBar = (SeekBar) findViewById(R.id.seekBar);
+        seekBar2 = (SeekBar) findViewById(R.id.seekBar2);
 
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -55,5 +65,23 @@ public class ViewExample2 extends Activity {
         },6000);
 
 
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                Log.e("MSG",""+i);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                Log.e("MSG","START");
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                Log.e("MSG","STOP");
+
+            }
+        });
     }
 }
