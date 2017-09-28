@@ -15,11 +15,16 @@
         <activity android:name=".MainPage" />
         <activity android:name=".Layouts" />
         <activity android:name=".ViewsExample1" />
-        <activity android:name=".ViewExample2"></activity>
-        <activity android:name=".ListViewActivity">
+        <activity android:name=".ViewExample2" />
+        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".ListViewActivity2"/>
+        <activity android:name=".IntentActivity2">
 
         </activity>
-        <activity android:name=".ListViewActivity2">
+        <activity android:name=".IntentActivity3">
+
+        </activity>
+        <activity android:name=".IntentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
