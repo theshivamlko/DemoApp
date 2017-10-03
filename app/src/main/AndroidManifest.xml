@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.shivam.navoki.demoapp">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_audiotrack_black_24dp"
@@ -16,15 +18,37 @@
         <activity android:name=".Layouts" />
         <activity android:name=".ViewsExample1" />
         <activity android:name=".ViewExample2" />
-        <activity android:name=".ListViewActivity"></activity>
-        <activity android:name=".ListViewActivity2"/>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".ListViewActivity2" />
         <activity android:name=".IntentActivity2">
 
-        </activity>
-        <activity android:name=".IntentActivity3">
+            <!--
+             <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                 <data android:mimeType="text/plain"></data>
+             </intent-filter>
+            -->
 
         </activity>
+        <activity android:name=".IntentActivity3" />
         <activity android:name=".IntentActivity">
+         <!--   <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".NewActivity">
+          <!--  <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".Main3ActivityCycle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
