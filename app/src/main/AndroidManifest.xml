@@ -3,8 +3,11 @@
     package="in.shivam.navoki.demoapp">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".SingletonClass"
         android:allowBackup="true"
         android:icon="@drawable/ic_audiotrack_black_24dp"
         android:label="@string/app_name"
@@ -33,22 +36,32 @@
         </activity>
         <activity android:name=".IntentActivity3" />
         <activity android:name=".IntentActivity">
-         <!--   <intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
         <activity android:name=".NewActivity">
-          <!--  <intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.SEND" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
                 <data android:mimeType="text/plain" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
-        <activity android:name=".Main3ActivityCycle">
+        <activity android:name=".Main3ActivityCycle"></activity>
+        <activity android:name=".DrawableActivity">
+
+        </activity>
+        <activity android:name=".TemporaryStorage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

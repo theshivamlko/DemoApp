@@ -46,6 +46,9 @@ int sum=0;
 
         context=this;
         Log.e("MSG","SUM "+sum);
+        SingletonClass singletonClass=SingletonClass.getInstance();
+        int m=singletonClass.var;
+        Log.e("MSG","VAR="+m);
 
 
         button8.setOnClickListener(new View.OnClickListener() {
