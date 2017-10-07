@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -17,6 +16,30 @@
         android:layout_height="wrap_content"
         android:text="Write data to txt file"
         android:id="@+id/b1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write SharePref"
+        android:id="@+id/b2"/>
 
+  <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write SQLite"
+        android:id="@+id/b3"/>
+
+  <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE SQLite"
+        android:id="@+id/b4"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:textSize="30sp"
+    android:id="@+id/text"
+    android:text="SOME TEXT"
+    android:layout_gravity="center_horizontal"
+    android:gravity="bottom"/>
 
 </LinearLayout>
