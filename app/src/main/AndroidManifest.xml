@@ -57,26 +57,25 @@
             </intent-filter>
             -->
         </activity>
-        <activity android:name=".Main3ActivityCycle"></activity>
-        <activity android:name=".DrawableActivity">
+        <activity android:name=".Main3ActivityCycle" />
+        <activity android:name=".DrawableActivity"></activity>
+        <activity android:name=".TemporaryStorage">
 
         </activity>
-        <activity android:name=".TemporaryStorage">
+
+        <receiver android:name=".Recievers">
+            <intent-filter>
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Dialogs">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <receiver android:name=".Recievers">
-            <intent-filter>
-                <action android:name="android.intent.action.REBOOT"/>
-            </intent-filter>
-        </receiver>
-
-
-
     </application>
 
 </manifest>
