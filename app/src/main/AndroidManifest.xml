@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.shivam.navoki.demoapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -58,10 +59,8 @@
             -->
         </activity>
         <activity android:name=".Main3ActivityCycle" />
-        <activity android:name=".DrawableActivity"></activity>
-        <activity android:name=".TemporaryStorage">
-
-        </activity>
+        <activity android:name=".DrawableActivity" />
+        <activity android:name=".TemporaryStorage" />
 
         <receiver android:name=".Recievers">
             <intent-filter>
@@ -69,7 +68,11 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Dialogs">
+        <activity android:name=".Dialogs"></activity>
+        <activity android:name=".WebServices">
+
+        </activity>
+        <activity android:name=".WeatherApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
